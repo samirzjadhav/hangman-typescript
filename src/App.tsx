@@ -34,7 +34,7 @@ function App() {
       </div>
       <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
       <HangmanWord />
-      <div className="" style={{ alignSelf: "stretch" }}>
+      <div className="" style={{ alignSelf: "stretch", padding: "10px" }}>
         <Keyboard />
       </div>
     </div>
