@@ -1,73 +1,146 @@
-# React + TypeScript + Vite
+````markdown
+# 🕹️ Hangman Game — React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
-Currently, two official plugins are available:
+> A fun and interactive **Hangman word-guessing game** built using **React**, **TypeScript**, and **Vite** 🎯  
+> Guess the hidden word before the hangman is fully drawn!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🎮 Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Live Demo:** [https://hangman-typescript-iota.vercel.app/](https://hangman-typescript-iota.vercel.app/)
+- **GitHub Repository:** [samirzjadhav/hangman-typescript](https://github.com/samirzjadhav/hangman-typescript)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- ⚛️ Built with **React + TypeScript + Vite**
+- 🎨 Clean UI with **CSS Modules**
+- 🧩 Random word generator from `wordList.json`
+- 🎹 On-screen keyboard + real keyboard support
+- 💀 Lose after 6 incorrect guesses
+- 🔁 Press **Enter** to restart instantly
+- 📱 Fully responsive design
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🧠 How to Play
+
+1. Try to guess the word by clicking or typing letters.
+2. Every wrong guess adds a piece to the hangman.
+3. You have **6 chances** before the game is over!
+4. Press **Enter** to play again.
+
+---
+
+## ⚙️ Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/hangman.git
+cd hangman
+
+# Install dependencies
+npm install
+
+# Run the app
+npm run dev
+```
+````
+
+Then open 👉 [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 🗂️ Project Structure
+
+```
+hangman/
+├── src/
+│   ├── components/
+│   │   ├── HangmanDrawing.tsx
+│   │   ├── HangmanWord.tsx
+│   │   └── Keyboard.tsx
+│   ├── wordList.json
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── App.css
+├── public/
+├── tsconfig.app.json
+├── package.json
+└── vite.config.ts
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧩 Example Word List
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+`wordList.json`
+
+```json
+["apple", "banana", "grape", "cherry", "orange", "mango"]
 ```
+
+---
+
+## 🚀 Technologies Used
+
+| Technology         | Description                    |
+| ------------------ | ------------------------------ |
+| ⚛️ **React**       | UI component library           |
+| 🧠 **TypeScript**  | Type-safe JavaScript           |
+| ⚡ **Vite**        | Fast build tool and dev server |
+| 🎨 **CSS Modules** | Scoped component styling       |
+| 📝 **JSON**        | For storing word lists         |
+
+---
+
+## 💡 Future Improvements
+
+- 🌍 Add multiple word categories (Animals, Movies, Countries)
+- 🎯 Add difficulty levels (Easy / Medium / Hard)
+- 🔊 Add sound effects and score tracking
+- 💫 Animate hangman drawing step-by-step
+- 🧠 Add hints system
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. 🍴 Fork the repo
+2. 🌿 Create a new branch (`feature/amazing-feature`)
+3. 💬 Commit your changes
+4. 🚀 Open a Pull Request
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+You are free to use, modify, and distribute it.
+
+---
+
+## 👨‍💻 Author
+
+**👋 Samir Jadhaw**
+💻 Aspiring Front-End Engineer passionate about building delightful web experiences.
+
+🌐 [Portfolio](https://portfolio-nu-five-95.vercel.app/)
+💼 [LinkedIn](https://linkedin.com/in/samirjadhaw)
+🐙 [GitHub](https://github.com/samirzjadhav)
+
+---
+
+> ⭐ If you like this project, don’t forget to **star** the repo and share it!
+
+---
