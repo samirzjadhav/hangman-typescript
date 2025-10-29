@@ -1,5 +1,3 @@
-import React from "react";
-
 const HEAD = (
   <div
     className=""
@@ -96,7 +94,7 @@ const LEFT_LEG = (
 const BODY_PARTS = [HEAD, BODY, RIGHT_ARM, LEFT_ARM, RIGHT_LEG, LEFT_LEG];
 
 type HangmanDrawingProps = {
-  numberOfguesses: number;
+  numberOfGuesses: number;
 };
 
 const HangmanDrawing = ({ numberOfGuesses }: HangmanDrawingProps) => {

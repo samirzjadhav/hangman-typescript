@@ -39,9 +39,7 @@ function App() {
       if (key !== "Enter") return;
 
       setWordToGuess(getWord());
-      setGuessedletters([
-        
-      ]);
+      setGuessedletters([]);
       e.preventDefault();
     };
     document.addEventListener("keypress", handler);

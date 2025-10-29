@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./Keyboard.module.css";
 
 const KEYS = [
