@@ -1,4 +1,3 @@
-````markdown
 # 🕹️ Hangman Game — React + TypeScript + Vite
 
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
@@ -40,6 +39,7 @@
 
 ---
 
+````markdown
 ## ⚙️ Installation
 
 ```bash
